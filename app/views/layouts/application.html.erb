@@ -9,10 +9,10 @@
   	"data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class ='<%= controller.controller_name %>'>
+<body class ="<%= controller.controller_name %>">
 	<div id="banner">
-		<% image_tag("logo.png") %>
-		<% @page_title || "Pragmatic bookshelf" %>
+		<%= image_tag("logo.png") %>
+		<%= @page_title || "Pragmatic Bookshelf" %>
 	</div>
 	<div id="columns">
 		<div id="side">
@@ -24,11 +24,9 @@
 			</ul>
 		</div>
 		<div id="main">
-			<% yield %>
+			<%= yield %>
 		</div>
 	</div>
-
-<%= yield %>
 
 </body>
 </html>
