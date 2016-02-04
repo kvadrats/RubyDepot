@@ -16,6 +16,11 @@
 	</div>
 	<div id="columns">
 		<div id="side">
+			<div id="cart">
+			<% hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+				<%= render @cart %>
+			<% end %>
+			</div>
 			<ul>
 				<li><a href="http://www....">Home</a></li>
 				<li><a href="http://www....">FAQ</a></li>
