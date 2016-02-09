@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.33)
     arel (4.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.1.4)
     byebug (8.2.2)
     coffee-rails (4.0.0)
@@ -106,6 +107,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.0.0)
   byebug
   coffee-rails (~> 4.0.0.beta1)
   jbuilder (~> 1.0.1)
