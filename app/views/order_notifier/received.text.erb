@@ -1,0 +1,9 @@
+Dear <%= @order.name %>
+
+Thank you for trying to ship something, even though that doesnt work,
+
+but at least you tried and your choice was
+
+<%= render @order.line_items %>
+
+There should be another email when it ships, but we both know it won't.

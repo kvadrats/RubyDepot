@@ -1,0 +1,9 @@
+<h3>Pragmatic Order Shipped</h3>
+<p>
+	We shipped out nothing, but at least you got this email for trying to ship:
+</p>
+
+<table>
+	<tr><th colspan="2">Qty</th><th>Description</th></tr>
+	<%= render @order.line_items %>
+</table>
